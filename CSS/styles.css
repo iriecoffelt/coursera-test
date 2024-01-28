@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    color: blue;
+    font-size: 20px;
+    width: 20p0x;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightyellow;
+}
+
+h1 {
+    color: green;
+    font-size: 36px;
+    text-align: center;
+}
+
+h2 {
+    color: pink;
+    font-size: 32px;
+    text-align: center;
+}
+
+h3 {
+    color: darkcyan;
+    font-size: 28px;
+    text-align: center;
+}
+
+h4 {
+    color: orange;
+    font-size: 24px;
+    text-align: center;
+}
+
+h5 {
+    color: brown;
+    font-size: 20px;
+    text-align: center;
+}
+
+div, .blue {
+    color: blue;
+    font-size: 18px;
+}
+
+.exampleClass {
+    color: purple;
+
+}
+
+.highlight {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: greenyellow;
+    opacity: .6;
+}
+
+#idSelector {
+    color: black;
+    background-color: red;
+    font-size: 24px;
+    opacity: .7;
+}
+
+#top {
+    color: gold;
+}
+
+#top.exampleClass {
+    background-color: blueviolet;
+    font-style: italic;
+}
+
+article p {
+    color: sandybrown;
+}
+
+article > h5 {
+    color: silver;
+    font-style: italic;
+}
+
+.highlight li {
+    color: darkred;
+}
+
+section ul.pseudoClass > li {
+    color: chartreuse;
+    list-style: none;
+    font-size: 30px;
+}
+
+section ul.pseudoClass > li a:link, a:visited {
+    text-decoration: none;
+    background-color: lightblue;
+    border: 1px solid blue;
+    color: black;
+    display: block;
+    width:200px;
+    text-align: center;
+    margin-bottom: 1px;
+    cursor: crosshair;
+}
+
+section ul.pseudoClass > li a:hover, a:active {
+    background-color: red;
+    color: purple;
+}
+
+section ul.pseudoClass > li:nth-child(3) a:hover, a:active {
+    background-color: greenyellow;
+    color: silver;
+}
+
+section ul.pseudoClass > li:nth-child(even) a:hover, a:active {
+    background-color: grey;
+    color: black;
+}
+
+#box {
+    background-color: blue;
+    padding: 10px;
+    border: 5px solid black;
+    margin-top: 20px;
+    width: 300px;
+    height: 100px;
+    overflow: auto;
+}
+
+#content {
+    background-color: burlywood;
+}
