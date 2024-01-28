@@ -1,3 +1,4 @@
+/************ Base Styles ***********/
 * {
     box-sizing: border-box;
     align-items: center;
@@ -13,11 +14,12 @@ p {
 }
 
 div #p5, div #p6 {
-    color: blue;
-    width: 50%;
-    /*border: 1px solid black;*/
-    float: left;
+    height: auto;
+    width: calc(50% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 10px;
+    background-color: teal;
 }
 
 body {
@@ -62,17 +64,28 @@ div, .blue {
     font-size: 18px;
 }
 
+li {
+    text-align: center;
+    list-style-position: inside;
+}
+
+ol {
+    text-align: center;
+}
+
 .exampleClass {
     color: purple;
 
 }
 
-.highlight {
+.highlight, .highlight li {
     font-size: 20px;
     font-weight: bold;
     font-style: italic;
     background-color: greenyellow;
     opacity: .6;
+    text-align: left;
+    list-style: inside;
 }
 
 #idSelector {
@@ -106,7 +119,7 @@ div, .blue {
 }
 
 #bg {
-    width: calc(1536px * 50%);
+    width: calc(1536px * 36px);
     height: 1536px;
     background: url("../Images/godzilla.png") no-repeat center blue;
     background-size: auto;
@@ -119,8 +132,8 @@ div, .blue {
 
 #p1 {
     background-color: aliceblue;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 }
 
 #p2 {
@@ -139,14 +152,6 @@ div, .blue {
     background-color: cornflowerblue;
     width: 50px;
     height: 50px;
-}
-
-#p5, #p6 {
-    height: auto;
-    width: calc(50% - 80px);
-    margin-left: 20px;
-    padding: 10px;
-    background-color: teal;
 }
 
 article p {
@@ -199,3 +204,28 @@ section ul.pseudoClass > li:nth-child(even) a:hover, a:active {
     color: black;
 }
 
+/************ Base Styles ***********/
+
+/************ Large Devices Only ***********/
+@media (min-width: 1200px) {
+    #p1 {
+        width: 80%;
+    }
+    #p2 {
+        width: 150px;
+        height: 150px;
+    }
+}
+/************ Large Devices Only ***********/
+
+/************ Medium Devices Only ***********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #p1 {
+        width: 50%;
+    }
+    #p2 {
+        width: 100px;
+        height: 100px;
+    }
+}
+/************ Medium Devices Only ***********/
