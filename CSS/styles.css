@@ -221,5 +221,12 @@ section ul.pseudoClass > li:nth-child(even) a:hover, a:active {
 /****** Simple Responsive Framework*******/
 .row {
     width: 100%;
+    margin-bottom:  15px;
+    text-align: center;
+}
+
+.container-fluid > .row {
+    border: 2px solid gold;
+    background-color: gray;
 }
 /****** Simple Responsive Framework*******/
